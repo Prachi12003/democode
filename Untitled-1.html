@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management</title>
+</head>
+<body>
+
+<h2>Employee Management</h2>
+
+<input id="id" placeholder="ID">
+<input id="name" placeholder="Name">
+<input id="dept" placeholder="Department">
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add() {
+    let id = document.getElementById("id").value;
+    let name = document.getElementById("name").value;
+    let dept = document.getElementById("dept").value;
+
+    let li = document.createElement("li");
+    li.innerText = id + " - " + name + " - " + dept;
+
+    document.getElementById("list").appendChild(li);
+}
+</script>
+
+</body>
+</html>
