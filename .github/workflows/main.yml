@@ -1,0 +1,12 @@
+# Sample YAML file
+
+name: Prachi
+role: Student
+age: 21
+
+skills:
+  - HTML
+  - CSS
+  - Git
+
+active: true
